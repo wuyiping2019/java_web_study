@@ -4,8 +4,8 @@ package com.wuyiping.domain;
  * 封装分页数据
  * */
 public class PageDo {
-    private Integer pageSize = 1;
-    private Integer pageNum = 1000;
+    private Integer pageSize;
+    private Integer pageNum;
 
     public Integer getPageSize() {
         return pageSize;

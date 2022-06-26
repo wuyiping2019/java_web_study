@@ -5,7 +5,7 @@ import com.alibaba.fastjson.support.spring.PropertyPreFilters;
 public class User  extends PageDo{
     public static PropertyPreFilters.MySimplePropertyPreFilter includefilter = null;
     static {
-        String[] includeProperties = {"name", "age"};
+        String[] includeProperties = {"user.name", "user.age","msg","code","desc"};
         PropertyPreFilters filters = new PropertyPreFilters();
         PropertyPreFilters.MySimplePropertyPreFilter includefilter = filters.addFilter();
         includefilter.addIncludes(includeProperties);
@@ -37,7 +37,6 @@ public class User  extends PageDo{
                 ", age=" + age +
                 ", pageSize=" + getPageSize() +
                 ", pageNum=" + getPageNum() +
-                ", count=" + getCount() +
                 '}';
     }
 }

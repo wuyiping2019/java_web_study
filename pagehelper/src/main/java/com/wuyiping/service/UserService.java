@@ -1,10 +1,9 @@
 package com.wuyiping.service;
 
+import com.github.pagehelper.Page;
 import com.wuyiping.domain.User;
-
-import java.util.List;
 
 public interface UserService {
 
-    List<User> selectUser(User user);
+    Page<User> selectUser(User user);
 }
