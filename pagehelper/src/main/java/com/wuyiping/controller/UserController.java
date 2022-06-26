@@ -10,7 +10,10 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.ResponseBody;
-
+/**
+ * springboot默认扫描 启动类所在包及其子包下的Bean
+ * 因此如果想要这个Controller及其依赖的对象在其它模块中能识别 则需要与entry中启动类所在包名一致
+ * */
 @Controller
 public class UserController {
     @Autowired

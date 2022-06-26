@@ -158,6 +158,12 @@
                 <version>${kaptcha.version}</version>
             </dependency>
 
+            <dependency>
+                <groupId>com.wuyiping</groupId>
+                <artifactId>pagehelper</artifactId>
+                <version>v1.0</version>
+            </dependency>
+
 
 
         </dependencies>

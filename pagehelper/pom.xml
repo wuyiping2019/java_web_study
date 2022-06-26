@@ -10,7 +10,6 @@
     <modelVersion>4.0.0</modelVersion>
 
     <artifactId>pagehelper</artifactId>
-    <version>v1.0</version>
 
     <dependencies>
         <!-- Spring框架基本的核心工具 -->
